@@ -54,7 +54,7 @@ fun ImagePart(modifier: Modifier = Modifier) {
 fun InformationPart(modifier: Modifier = Modifier) {
     Column(modifier = modifier) {
         Row(modifier = Modifier.padding(4.dp)) {
-            Image(
+            Icon(
                 painter = painterResource(id = R.drawable.round_call_24),
                 contentDescription = null,
                 modifier = Modifier.padding(horizontal = 4.dp)
@@ -63,7 +63,7 @@ fun InformationPart(modifier: Modifier = Modifier) {
         }
 
         Row(modifier = Modifier.padding(4.dp)) {
-            Image(
+            Icon(
                 painter = painterResource(id = R.drawable.round_share_24),
                 contentDescription = null,
                 modifier = Modifier.padding(horizontal = 4.dp)
@@ -72,7 +72,7 @@ fun InformationPart(modifier: Modifier = Modifier) {
         }
 
         Row(modifier = Modifier.padding(4.dp)) {
-            Image(
+            Icon(
                 painter = painterResource(id = R.drawable.round_email_24),
                 contentDescription = null,
                 modifier = Modifier.padding(horizontal = 4.dp)

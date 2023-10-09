@@ -57,6 +57,7 @@ fun InformationPart(modifier: Modifier = Modifier) {
             Icon(
                 painter = painterResource(id = R.drawable.round_call_24),
                 contentDescription = null,
+                tint = Color.Blue,
                 modifier = Modifier.padding(horizontal = 4.dp)
             )
             Text("+82 10 0000 0000")
@@ -66,6 +67,7 @@ fun InformationPart(modifier: Modifier = Modifier) {
             Icon(
                 painter = painterResource(id = R.drawable.round_share_24),
                 contentDescription = null,
+                tint = Color.Blue,
                 modifier = Modifier.padding(horizontal = 4.dp)
             )
             Text("https://www.linkedin.com/in/jaehwa-noh/")
@@ -75,6 +77,7 @@ fun InformationPart(modifier: Modifier = Modifier) {
             Icon(
                 painter = painterResource(id = R.drawable.round_email_24),
                 contentDescription = null,
+                tint = Color.Blue,
                 modifier = Modifier.padding(horizontal = 4.dp)
             )
             Text("shwoghk14@gmail.com")

@@ -11,7 +11,7 @@ This main branch is the main directory.
 
 [코드랩 페이지](https://developer.android.com/codelabs/basic-android-kotlin-compose-business-card#0)
 
-## Low-Fidelity prototype (대략적인 시제품)
+## Low-Fidelity prototype (대략적인 설계도)
 <img src="https://github.com/shwoghk14/Business-card-app/assets/48680511/15ecd841-9907-4eb8-ac0c-f9b06e58c3f1" width="300" />
 
 

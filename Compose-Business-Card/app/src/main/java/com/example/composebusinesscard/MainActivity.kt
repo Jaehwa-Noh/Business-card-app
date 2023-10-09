@@ -3,8 +3,10 @@ package com.example.composebusinesscard
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -41,9 +43,19 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun BusinessCard(modifier: Modifier = Modifier) {
-    Column(modifier = modifier) {
-        ImagePart()
-        InformationPart()
+    Column(
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally,
+        modifier = modifier.fillMaxSize()
+    ) {
+        Spacer(modifier = Modifier.weight(0.4f))
+        ImagePart(
+            modifier = Modifier.weight(0.2f)
+        )
+        Spacer(modifier = Modifier.weight(0.2f))
+        InformationPart(
+            modifier = Modifier.weight(0.2f)
+        )
     }
 }
 
@@ -102,6 +114,14 @@ fun InformationPart(modifier: Modifier = Modifier) {
             )
             Text("shwoghk14@gmail.com")
         }
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun BusinessCardPreview() {
+    ComposeBusinessCardTheme {
+        BusinessCard()
     }
 }
 

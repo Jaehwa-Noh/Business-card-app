@@ -34,10 +34,33 @@ struct NamePartView: View {
 
 struct InformationPartView: View {
     var body: some View {
-        VStack {
-            
+        VStack(alignment: .leading) {
+            HStack {
+                Image(systemName: "phone.fill")
+                    .padding(.trailing, 16)
+                    .foregroundStyle(.blue)
+                Text("+82 10 0000 0000")
+            }
+            .padding(4)
+            HStack {
+                Image(systemName: "square.and.arrow.up.fill")
+                    .padding(.trailing, 16)
+                    .foregroundStyle(.blue)
+                Text("https://www.linkedin.com/in/jaehwa-noh/")
+            }
+            .padding(4)
+            HStack {
+                Image(systemName: "envelope.fill")
+                    .padding(.trailing, 16)
+                    .foregroundStyle(.blue)
+                Text("shwoghk14@gmail.com")
+            }
+            .padding(4)
         }
     }
+}
+#Preview {
+    InformationPartView()
 }
 
 #Preview {

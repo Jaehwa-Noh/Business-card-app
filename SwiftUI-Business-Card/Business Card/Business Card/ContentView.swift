@@ -17,6 +17,7 @@ struct ContentView: View {
             InformationPartView()
             Spacer()
         }
+        .padding(.horizontal, 12)
     }
 }
 
